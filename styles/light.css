@@ -5,6 +5,8 @@
   --title-color: #353430;
   --accent-color: #ff8dcb;
   --decoration-focus-color: #ffc2e6;
+  background-image: url('/images/cover-image-light.png');
+  --content-headers-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -15,6 +17,8 @@
     --title-color: #353430;
     --accent-color: #ff8dcb;
     --decoration-focus-color: #ffc2e6;
+    background-image: url('/images/cover-image-light.png');
+    --content-headers-color: #353430;
   }
 }
 
