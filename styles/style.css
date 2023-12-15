@@ -1,5 +1,127 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--font);
+  font-size: var(--main-text-size);
+  background-color: var(--background-color);
+}
+
+.header {
+  height: 100vh;
+  padding: var(--page-padding);
+  display: grid;
+  grid-template-rows: 1fr fit-content(100px) 1fr;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-block-start: 1px solid var(--header-theme-menu-color);
+  border-inline-end: 1px solid var(--header-theme-menu-color);
+  width: 25px;
+  height: 25px;
+  inset-inline-end: var(--page-padding);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-inline-start: 1px solid var(--header-theme-menu-color);
+  border-block-end: 1px solid var(--header-theme-menu-color);
+  width: 25px;
+  height: 25px;
+  inset-block-end: var(--page-padding);
+}
+
+.header__decoration-rec {
+  color: var(--header-theme-menu-color);
+  position: absolute;
+  inset-inline-end: var(--page-padding);
+  text-transform: uppercase;
+}
+
+.header__decoration-rec::after {
+  content: '';
+  display: inline-block;
+  margin-inline: 9px;
+  margin-block-end: 1px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--header-theme-menu-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+  color: var(--header-theme-menu-color);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (width > 768px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: flex-start;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+}
+
+.header__theme-menu-button {
+  background: none;
+  border: none;
+  text-transform: lowercase;
+  padding-inline: 13px;
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid color-mix(in srgb, currentColor 40%, transparent);
+  
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: transparent;
+  text-decoration: underline solid currentColor 1px;
+  text-underline-offset: 6px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid currentColor;
+  pointer-events: none;
+}
+
+.decoration__focus {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  color: var(--decoration-focus-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  justify-self: start;
+  align-self: start;
+}
+
+@media (width >= 768px ) {
+  .decoration__focus {
+    margin-inline-start: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+ 
+.header__title {
+  width: max(355px, calc(100vw - 2*var(--page-padding))/2);
+  font-size: var(--main-text-size);
+  font-weight: 700;
+  justify-self: end;
+  align-self: center;
+}
+
+.title-decor {
+  color: var(--title-color);
+  background-color: var(--accent-color);
 }
