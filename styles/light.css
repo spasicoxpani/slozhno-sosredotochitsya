@@ -18,6 +18,6 @@
   }
 }
 
-.header__decoration-rec.theme_light {
+.theme_light .header__decoration-rec {
   display: none;
 } 
