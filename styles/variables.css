@@ -1,11 +1,12 @@
 :root {
   --background-color: #000028;
   --header-theme-menu-color: #FF0070;
+  --content-headers-color: #FF0070;
   --title-color: #000028;
   --main-text-color: #F1B2CE;
   --accent-color: #FF0070;
   --decoration-focus-color: #DB00FF;
-  --page-padding: min(2.8vw, 20px);
+  --page-padding: min(2.667vw, 20px);
   --font: 'IBM Plex Mono', sans-serif;
   --main-text-size: 18px;
   --main-text-line-height: 130%;
