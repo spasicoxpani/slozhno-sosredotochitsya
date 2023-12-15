@@ -20,8 +20,13 @@
     background-image: url('/images/cover-image-light.png');
     --content-headers-color: #353430;
   }
+
+  .page.theme_auto {
+        background-image: url('/images/cover-image-light.png');
+  }
 }
 
-.theme_light .header__decoration-rec {
+.theme_light .header__decoration-rec,
+.theme_auto .header__decoration-rec {
   display: none;
 } 
