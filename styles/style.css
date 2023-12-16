@@ -146,6 +146,11 @@
   color: var(--main-text-color);
 }
 
+.content__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
 .content__text-section-header {
   font-size: var(--main-text-size);
   color: var(--content-headers-color);
