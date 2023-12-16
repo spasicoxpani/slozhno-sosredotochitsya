@@ -218,7 +218,6 @@
   .content__galery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content);
     gap: 20px;
   }
 
@@ -229,29 +228,20 @@
     object-position: center;
   }
 
-  .sunset-picture {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+  .content__galery-picture:first-of-type {
+    grid-column: span 2;
   }
-
-  .ice-cream-picture {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
+  
+  .content__galery-picture:nth-of-type(2) {
+      grid-row: span 2;
   }
-
-  .tape-picture {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+  
+  .content__galery-picture:nth-of-type(3) {
+      grid-row: span 2;
   }
-
-  .books-picture {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  .street-picture {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
+  
+  .content__galery-picture:last-of-type {
+      grid-column: span 2;
   }
 }
 
