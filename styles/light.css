@@ -23,10 +23,13 @@
   .page.theme_auto {
     background-image: url("../images/cover-image-light.png");
   }
+
+  .theme_auto .header__decoration-rec {
+    display: none;
+  }
 }
 
-.theme_light .header__decoration-rec,
-.theme_auto .header__decoration-rec {
+.theme_light .header__decoration-rec {
   display: none;
 }
 
@@ -36,3 +39,5 @@
     text-shadow: 4px 4px 0 #ff0070;
   }
 }
+
+
