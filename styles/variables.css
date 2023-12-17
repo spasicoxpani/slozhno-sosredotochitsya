@@ -7,7 +7,7 @@
   --accent-color: #FF0070;
   --decoration-focus-color: #DB00FF;
   --page-padding: min(2.667vw, 20px);
-  --font: 'IBM Plex Mono', sans-serif;
+  --font: 'IBM Plex Mono', monospace, sans-serif;
   --main-text-size: 18px;
   --main-text-line-height: 130%;
 }
